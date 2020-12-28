@@ -9,7 +9,9 @@ Arsen Sheverdin, Francesco Monticone, and Constantinos Valagiannopoulos - ["Phot
 ```python
  bash download_dataset.sh
 ```
-### To run the code for demonstration of prediction of dimensions of sphere, run:
+### To run the code for demonstration of sphere dimensions' generation:
 ```python
  python main.py
 ```
+
+![alt text](https://github.com/arsen-sheverdin/CloakingNet/media/schematics.pdf "Logo Title Text 1")
