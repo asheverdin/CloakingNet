@@ -14,6 +14,6 @@ Arsen Sheverdin, Francesco Monticone, and Constantinos Valagiannopoulos - ["Phot
  python main.py
 ```
 
-![test image size](https://github.com/arsen-sheverdin/CloakingNet/blob/master/media/schema.png "Logo Title Text 1"){:height="2%" width="2%"}
+<!--%![test image size](https://github.com/arsen-sheverdin/CloakingNet/blob/master/media/schema.png "Logo --Title %Text 1"){:height="2%" width="2%"}-->
 
-<img src = "https://github.com/arsen-sheverdin/CloakingNet/blob/master/media/schema.png" width="100" height="100">
+<img src = "https://github.com/arsen-sheverdin/CloakingNet/blob/master/media/schema.png" width="700" height="700">
