@@ -13,6 +13,7 @@ Arsen Sheverdin, Francesco Monticone, and Constantinos Valagiannopoulos - ["Phot
 ```python
  python main.py
 ```
-![alt text](https://github.com/arsen-sheverdin/CloakingNet/media/schema.png "Logo Title Text 1")
+
+![alt text](https://github.com/arsen-sheverdin/CloakingNet/blob/master/media/schema.png "Logo Title Text 1")
 
 
