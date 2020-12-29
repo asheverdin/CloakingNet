@@ -4,6 +4,8 @@ This repo contains the parts of original implementation of:
 
 Arsen Sheverdin, Francesco Monticone, and Constantinos Valagiannopoulos - ["Photonic Inverse Design with Neural Networks: The Case of Invisibility in the Visible"](https://journals.aps.org/prapplied/abstract/10.1103/PhysRevApplied.14.024054)
 
+![alt text](https://github.com/arsen-sheverdin/CloakingNet/blob/master/media/schema.png "Logo Title Text 1")
+
 ## how to run the code
 
 ### In order to donwload the data, run:
@@ -16,9 +18,9 @@ Arsen Sheverdin, Francesco Monticone, and Constantinos Valagiannopoulos - ["Phot
 ```
 ### View all avaiable command-line arguments by running:
 
-    ``` bash
-    python main.py --help
-    ```    
+``` bash
+ python main.py --help
+```    
 
 ## Cite
 
@@ -40,6 +42,6 @@ Please cite our paper if you found this code useful and use it in your own work:
 }
 ```
 
-![alt text](https://github.com/arsen-sheverdin/CloakingNet/blob/master/media/schema.png "Logo Title Text 1")
+
 
 
