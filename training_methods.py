@@ -14,8 +14,7 @@ import copy
 np.random.seed(17)
 torch.manual_seed(17)
 
-# Making main device to be CUDA (GPU)  
-device = torch.device("cuda:0" if (torch.cuda.is_available()) else "cpu") 
+# device = torch.device("cuda:0" if (torch.cuda.is_available()) else "cpu") 
 
 def MARE(input,target):
   #Mean Average Relative Error or relative accuracy
@@ -33,8 +32,10 @@ def params_init(layer_size, learning_r, loss_main):
   return model1, optimizer1, train_step1, counter1
 
 def train_procedure(model, train_step,loss_main,loss_secondary,
-                  train_loader, train_loader_check, val_loader):
-  n_epochs = 2
+                  train_loader, train_loader_check, val_loader, args):
+
+  n_epochs = args.epochs
+  device = args.device
   counter = 0
   i=0
   k = 0
@@ -111,19 +112,20 @@ def train_procedure(model, train_step,loss_main,loss_secondary,
           tr_losses_secondary_global.append(MARE_TR)
           val_losses_secondary_global.append(MARE_VL)
                
-          if counter ==20:
+          if counter == args.stopping_criterion:
             print('//////////////////////////////////The End /////////////////////////////////////////////////////////////////////////////////////////////////')
             break;
   return bestm, best_val_error_main,final_error_secondary, counter, epoch+1
 
 
-def train_main(part, train_loader, train_loader_check, test_loader):
+def train_main(part, train_loader, train_loader_check, test_loader, args):
     """
       Conducts main training procedure for particular part of k-fold splitting.
       *Iterates over the set of hyperparameters.
       *After training "scans" all the thresholds, generating the dimension values [d1,d2,d3,d4,d5] of particles. 
       *Calls an object of DataStore class to save the results and the best network states.
     """
+    device = args.device
     records = pd.DataFrame(columns=['Part_Num','Learning_rate', 'Layer_size', 'best_val(MSE)',\
                                     'last_val(MARE)', 'stopping epoch', 'counter',\
                                     'positive num', 'all'])
@@ -152,7 +154,8 @@ def train_main(part, train_loader, train_loader_check, test_loader):
                                                               train_step,loss_main,
                                                               loss_secondaty, \
                                                               train_loader, train_loader_check, \
-                                                              test_loader)#training
+                                                              test_loader,\
+                                                              args)#training
     #save the model
         ds.net_saver(bestmodel)
     # "Scanning" over the constant(threshold) scattering power values.
