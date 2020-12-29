@@ -19,7 +19,7 @@ def main(args):
 
   for train_index, test_index in kf.split(X):
          part += 1
-         # if part >=3 and part <5:
+         # which partitions to train on: All of them by default
          if part in args.parts:
             #object that stores data and saves/loads net parameters
             print('Part number:\t', part)
@@ -59,46 +59,6 @@ if __name__ == '__main__':
     parser.add_argument('--parts', type = list, default = np.arange(1,11),
                         help = 'Partitions which we want consider. By default: all 10 partitions. See "n_splits"')
 
-
-    # parser.add_argument('--hidden_dims_gen', default=[128, 256, 512],
-    #                     type=int, nargs='+',
-    #                     help='Hidden dimensionalities to use inside the ' +
-    #                          'generator. To specify multiple, use " " to ' +
-    #                          'separate them. Example: \"128 256 512\"')
-    # parser.add_argument('--hidden_dims_disc', default=[512, 256],
-    #                     type=int, nargs='+',
-    #                     help='Hidden dimensionalities to use inside the ' +
-    #                          'discriminator. To specify multiple, use " " to ' +
-    #                          'separate them. Example: \"512 256\"')
-    # parser.add_argument('--dp_rate_gen', default=0.1, type=float,
-    #                     help='Dropout rate in the discriminator')
-    # parser.add_argument('--dp_rate_disc', default=0.3, type=float,
-    #                     help='Dropout rate in the discriminator')
-
-    # # Optimizer hyperparameters
-    # parser.add_argument('--lr', default=2e-4, type=float,
-    #                     help='Learning rate to use')
-    # parser.add_argument('--batch_size', default=128, type=int,
-    #                     help='Batch size to use for training')
-
-    # # Other hyperparameters
-    
-    # parser.add_argument('--seed', default=42, type=int,
-    #                     help='Seed to use for reproducing results')
-
-    # parser.add_argument('--num_workers', default=4, type=int,
-    #                     help='Number of workers to use in the data loaders.' +
-    #                          'To have a truly deterministic run, this has to be 0.')
-    # parser.add_argument('--log_dir', default='GAN_logs/', type=str,
-    #                     help='Directory where the PyTorch Lightning logs ' +
-    #                          'should be created.')
-    # parser.add_argument('--progress_bar', action='store_true',
-    #                     help='Use a progress bar indicator for interactive experimentation. ' +
-    #                          'Not to be used in conjuction with SLURM jobs.')
-
-    # # saving images
-    # parser.add_argument('--save_every', default=10, type=int,
-    #                     help='Number of epochs to generate an image.')
 
     args = parser.parse_args()
 
