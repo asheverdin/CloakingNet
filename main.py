@@ -40,7 +40,6 @@ def main(args):
       #Model   
  
 if __name__ == '__main__':
-    # Feel free to add more argument parameters
     parser = argparse.ArgumentParser()
 
     # Parameters
@@ -53,11 +52,11 @@ if __name__ == '__main__':
     parser.add_argument('--device', type = str, default=("cpu" if not torch.cuda.is_available() else "cuda"),
                         help="Device: CPU or GPU on which training is conducted")
     parser.add_argument('--seed', default = 17, type=int,
-                        help='Seed to use for reproducing results')
+                        help='Seed to reproduce the results')
     parser.add_argument('--n_splits', default = 10, type = int,
-                        help = 'Number of partitions for training in K-Fold cross-validations')
+                        help = 'Number of pars for training in K-Fold cross-validations')
     parser.add_argument('--parts', type = list, default = np.arange(1,11),
-                        help = 'Partitions which we want consider. By default: all 10 partitions. See "n_splits"')
+                        help = 'Parts which we want consider. By default: all 10 parts of partition. See "n_splits"')
 
 
     args = parser.parse_args()

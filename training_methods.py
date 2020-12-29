@@ -11,10 +11,7 @@ import torch.nn as nn
 import statistics as st
 import copy
 
-np.random.seed(17)
-torch.manual_seed(17)
 
-# device = torch.device("cuda:0" if (torch.cuda.is_available()) else "cpu") 
 
 def MARE(input,target):
   #Mean Average Relative Error or relative accuracy
@@ -36,6 +33,8 @@ def train_procedure(model, train_step,loss_main,loss_secondary,
 
   n_epochs = args.epochs
   device = args.device
+  np.random.seed(args.seed)
+  torch.manual_seed(args.seed)
   counter = 0
   i=0
   k = 0
@@ -126,6 +125,8 @@ def train_main(part, train_loader, train_loader_check, test_loader, args):
       *Calls an object of DataStore class to save the results and the best network states.
     """
     device = args.device
+    np.random.seed(args.seed)
+    torch.manual_seed(args.seed)
     records = pd.DataFrame(columns=['Part_Num','Learning_rate', 'Layer_size', 'best_val(MSE)',\
                                     'last_val(MARE)', 'stopping epoch', 'counter',\
                                     'positive num', 'all'])
@@ -175,7 +176,5 @@ def train_main(part, train_loader, train_loader_check, test_loader, args):
                   'all': vals_arr.shape[0]}
         records = records.append(new_row, ignore_index=True) 
     ds.records_saver(records) 
-
-
 
   
