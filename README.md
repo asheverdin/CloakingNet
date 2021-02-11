@@ -17,19 +17,22 @@ Arsen Sheverdin, Francesco Monticone, and Constantinos Valagiannopoulos - ["Phot
   bash install_dependencies.sh
   ```
 
-### In order to donwload the data, run:
+- In order to donwload the data, run:
   ```bash
   bash download_dataset.sh
   ```
-### To activate the environment:
+- To activate the environment, run:
   ```bash
   source activate cloaking_net
   ```
-### To reproduce the results of sphere dimensions' generation, run:
+### Usage
+
+
+- To reproduce the results of sphere dimensions' generation, run:
   ```bash
   python main.py
   ```
-### View all avaiable command-line arguments by running:
+- View all avaiable command-line arguments by running:
 
   ``` bash
   python main.py --help
