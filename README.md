@@ -10,8 +10,8 @@ Arsen Sheverdin, Francesco Monticone, and Constantinos Valagiannopoulos - ["Phot
 
 ### Dependencies 
 
-:large_blue_circle: [Conda with Python](https://www.anaconda.com)
-:large_blue_circle: Install the environment `cloaking_net`
+:large_blue_circle: [Conda with Python](https://www.anaconda.com)  
+:large_blue_circle: Install the environment `cloaking_net` 
  ```bash
     bash install_dependencies.sh
  ```
