@@ -14,7 +14,7 @@ Arsen Sheverdin, Francesco Monticone, and Constantinos Valagiannopoulos - ["Phot
 - Install the environment `cloaking_net`
 
  ```bash
-    bash install_dependencies.sh
+  bash install_dependencies.sh
  ```
 
 ### In order to donwload the data, run:
