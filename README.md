@@ -16,15 +16,15 @@ Arsen Sheverdin, Francesco Monticone, and Constantinos Valagiannopoulos - ["Phot
   ```bash
   bash install_dependencies.sh
   ```
-
-- In order to donwload the data, run:
-  ```bash
-  bash download_dataset.sh
-  ```
 - To activate the environment, run:
   ```bash
   source activate cloaking_net
   ```
+- In order to donwload the data, run:
+  ```bash
+  bash download_dataset.sh
+  ```
+
 ### Usage
 
 
