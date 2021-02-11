@@ -10,8 +10,8 @@ Arsen Sheverdin, Francesco Monticone, and Constantinos Valagiannopoulos - ["Phot
 
 ### Dependencies 
 
-:large_blue_circle: [Conda with Python](https://www.anaconda.com)  
-:large_blue_circle: Install the environment `cloaking_net` 
+- [Conda with Python](https://www.anaconda.com)  
+- Install the environment `cloaking_net`
  ```bash
     bash install_dependencies.sh
  ```
@@ -22,7 +22,7 @@ Arsen Sheverdin, Francesco Monticone, and Constantinos Valagiannopoulos - ["Phot
 ```
 ### To activate the environment:
 ```bash
- source activate 'cloaking_net'
+ source activate cloaking_net
 ```
 ### To reproduce the results of sphere dimensions' generation, run:
 ```bash
