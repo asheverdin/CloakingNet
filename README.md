@@ -8,9 +8,21 @@ Arsen Sheverdin, Francesco Monticone, and Constantinos Valagiannopoulos - ["Phot
 
 ## how to run the code
 
+### Dependencies 
+
+:large_blue_circle: [Conda with Python](https://www.anaconda.com)
+:large_blue_circle: Install the environment `cloaking_net`
+ ```bash
+    bash install_dependencies.sh
+ ```
+
 ### In order to donwload the data, run:
 ```bash
  bash download_dataset.sh
+```
+### To activate the environment:
+```bash
+ source activate 'cloaking_net'
 ```
 ### To reproduce the results of sphere dimensions' generation, run:
 ```bash
