@@ -13,27 +13,27 @@ Arsen Sheverdin, Francesco Monticone, and Constantinos Valagiannopoulos - ["Phot
 - [Conda with Python](https://www.anaconda.com)  
 - Install the environment `cloaking_net`
 
- ```bash
- bash install_dependencies.sh
- ```
+  ```bash
+  bash install_dependencies.sh
+  ```
 
 ### In order to donwload the data, run:
-```bash
-bash download_dataset.sh
-```
+  ```bash
+  bash download_dataset.sh
+  ```
 ### To activate the environment:
-```bash
-source activate cloaking_net
-```
+  ```bash
+  source activate cloaking_net
+  ```
 ### To reproduce the results of sphere dimensions' generation, run:
-```bash
-python main.py
-```
+  ```bash
+  python main.py
+  ```
 ### View all avaiable command-line arguments by running:
 
-``` bash
-python main.py --help
-```    
+  ``` bash
+  python main.py --help
+  ```    
 
 ## Cite
 
