@@ -6,7 +6,7 @@ Arsen Sheverdin, Francesco Monticone, and Constantinos Valagiannopoulos - ["Phot
 
 ![alt text](https://github.com/arsen-sheverdin/CloakingNet/blob/master/media/schema.png "Logo Title Text 1")
 
-## how to run the code
+## How to run the code
 
 ### Dependencies 
 
