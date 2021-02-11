@@ -28,7 +28,7 @@ Arsen Sheverdin, Francesco Monticone, and Constantinos Valagiannopoulos - ["Phot
 ### Usage
 
 
-- To reproduce the results of sphere dimensions' generation, run:
+- To train and reproduce the results of sphere dimensions' generation, run:
   ```bash
   python main.py
   ```
