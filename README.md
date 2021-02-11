@@ -12,6 +12,7 @@ Arsen Sheverdin, Francesco Monticone, and Constantinos Valagiannopoulos - ["Phot
 
 - [Conda with Python](https://www.anaconda.com)  
 - Install the environment `cloaking_net`
+
  ```bash
     bash install_dependencies.sh
  ```
